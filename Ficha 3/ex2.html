@@ -9,13 +9,26 @@
 </head>
 
 <body>
-  <label for="text">Apenas Texto:</label>
-  <textarea name="textarea" cols="30" rows="10" placeholder="Apenas texto..." pattern="[a-zA-Z]*" required></textarea>
-  <br>
-  <label for="numbers">Apenas números:</label>
-  <textarea name="numbers" cols="30" rows="10" placeholder="Apenas números..." pattern="[0-9]" required></textarea>
-
-  <button type="submit">Submit</button>
+  <form action="">
+    <label for="text">Apenas Texto:</label>
+    <input type="text" name="text" placeholder="Only text..." pattern="[a-zA-Z]*" required>
+    <br>
+    <label for="numbers">Apenas números:</label>
+    <input type="text" name="numbers" placeholder="Only numbers..." pattern="[1-9]*" required>
+    <br>
+    <label for="A_Z">Only 'a' and 'z'</label>
+    <input type="text" pattern="[a,z]*" placeholder="Only lowercase..." required>
+    <br>
+    <label for="IPV">IPV</label>
+    <input type="text" placeholder="Apenas ipv..." pattern="[ipv]*" required>
+    <br>
+    <label for="NoIPV">Não IPV</label>
+    <input type="text" placeholder="Tudo menos ipv..." pattern="[^ipv]*" required>
+    <br>
+    <label for="Apenas15">Always 15</label>
+    <input type="text" placeholder="15 chars uppercase..." pattern="[A-Z]{1,15}" required>
+    <button value="submit" type="submit">Submit</button>
+  </form>
 </body>
 
 </html>
