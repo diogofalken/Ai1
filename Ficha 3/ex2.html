@@ -8,30 +8,42 @@
   <title>Testes de Regex</title>
 </head>
 
-<body>
-  <h2 align="center">Testes de Regex</h2>
-  <form action="#">
-    <label for="text">Just Text:</label>
-    <input title="onlytext" type="text" name="text" placeholder="Only text..." pattern="[a-zA-Z]*" required>
-    <br>
-    <label for="numbers">Just numbers:</label>
-    <input title="onlynumbers" type="text" name="numbers" placeholder="Only numbers..." pattern="[1-9]*" required>
-    <br>
-    <label for="A_Z">Only 'a' to 'z'</label>
-    <input title="onlylowercase" type="text" pattern="[a-z]*" placeholder="Only lowercase..." required>
-    <br>
-    <label for="IPV">IPV</label>
-    <input title="only_ipv" type="text" placeholder="Apenas ipv..." pattern="[ipv,IPV]*" required>
-    <br>
-    <label for="NoIPV">Not IPV</label>
-    <input title="not_ipv" type="text" placeholder="Tudo menos ipv..." pattern="[^ipv,^IPV]+$" required>
-    <br>
-    <label for="Apenas15">Always 15</label>
-    <input title="15charsuppercase" type="text" placeholder="15 chars uppercase..." pattern="[A-Z]{15}" required>
-    <br>
-    <label for="TelephoneNumber">Phone Number</label>
-    <input title="phonenumber" type="text" placeholder="Phone (xxx-xxx-xxx or xxx xxx xxx)..." pattern="9*[1-3,6]{1}[1-9]{1}[ ,-][0-9]{3}[ ,-][0-9]{3}$"
+<body style="margin: 0; padding:0;">
+  <h2 style="text-align:center">Testes de Regex</h2>
+  <form action="#" style="text-align: center; width: 50%; margin: 0 auto">
+    <label id="text" style="float:left">Just Text:</label>
+    <input style="float:right" title="onlytext" type="text" name="text" placeholder="Only text..." pattern="[a-zA-Z]*"
       required>
+    <div style="clear:both"></div>
+    <br>
+    <label id="numbers" style="float:left">Just numbers:</label>
+    <input style="float:right" title="onlynumbers" type="text" name="numbers" placeholder="Only numbers..." pattern="[1-9]*"
+      required>
+    <div style="clear:both"></div>
+    <br>
+    <label id="A_Z" style="float:left">Only 'a' to 'z'</label>
+    <input style="float:right" title="onlylowercase" type="text" pattern="[a-z]*" placeholder="Only lowercase..."
+      required>
+    <div style="clear:both"></div>
+    <br>
+    <label id="IPV" style="float:left">IPV</label>
+    <input style="float:right" title="only_ipv" type="text" placeholder="Apenas ipv..." pattern="[ipv,IPV]*" required>
+    <div style="clear:both"></div>
+    <br>
+    <label id="NoIPV" style="float:left">Not IPV</label>
+    <input style="float:right" title="not_ipv" type="text" placeholder="Tudo menos ipv..." pattern="[^ipv,^IPV]+$"
+      required>
+    <div style="clear:both"></div>
+    <br>
+    <label id="Apenas15" style="float:left">Always 15</label>
+    <input style="float:right" title="15charsuppercase" type="text" placeholder="15 chars uppercase..." pattern="[A-Z]{15}"
+      required>
+    <div style="clear:both"></div>
+    <br>
+    <label id="TelephoneNumber" style="float:left">Phone Number</label>
+    <input style="float:right" title="phonenumber" type="text" placeholder="Phone (xxx-xxx-xxx or xxx xxx xxx)..."
+      pattern="9*[1-3,6]{1}[1-9]{1}[ ,-][0-9]{3}[ ,-][0-9]{3}$" required>
+    <div style="clear:both"></div>
     <br>
     <button value="submit" type="submit">Submit</button>
     <button type="reset">Clean</button>
