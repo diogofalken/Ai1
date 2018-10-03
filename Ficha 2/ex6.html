@@ -12,15 +12,15 @@
   <h1 style="text-align:center">Ai1 - Formulário</h1>
   <form method="post">
     <fieldset name="Dados de Contrato">
-      <label for="Name">Name:</label>
+      <label id="Name">Name:</label>
       <input type="text" placeholder="First and Last name..." pattern="[a-zA-Z]{.}" required>
       <br>
-      <label for="Email">Email:</label>
+      <label id="Email">Email:</label>
       <input type="email" name="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="email@company.com..."
         required>
     </fieldset>
     <p>
-      <label for="Reason">Contact Reason:</label>
+      <label id="Reason">Contact Reason:</label>
       <select name="contact_reason">
         <option value="sugestion">Sugestion</option>
         <option value="criticism">Criticism</option>
@@ -29,7 +29,7 @@
       </select>
     </p>
     <p>
-      <label for="message">Message:</label>
+      <label id="message">Message:</label>
       <textarea name="Message" cols="10" rows="10" placeholder="Enter a message..." required></textarea>
     </p>
 
