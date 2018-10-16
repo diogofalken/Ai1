@@ -1,0 +1,62 @@
+body {
+  background-color: #e7ebf0;
+}
+
+h1 {
+  color: red;
+  background-color: green;
+}
+
+p {
+  font-family: "Verdana", "Arial";
+  font-size: 16px;
+}
+
+p:first-of-type {
+  background-color: lightblue;
+}
+
+p span {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.color {
+  font-family: "Sarif", "Arial";
+  font-size: 12px;
+  font-style: italic;
+  text-decoration: underline;
+  background-image: linear-gradient(90deg, white, gray);
+}
+
+ul {
+  list-style: none;
+  background-color: #333333;
+  border: solid 1px red;
+  padding: 20px;
+}
+
+ul li {
+  font-family: "Arial";
+  padding: 0px 10px;
+}
+
+ul #inicio {
+  background-color: #defe51;
+}
+
+ul #clientes {
+  background-color: #57fb9a;
+}
+
+ul #produtos {
+  background-color: #5396fe;
+}
+
+ul #avisos {
+  background-color: #de51ff;
+}
+
+ul #contactos {
+  background-color: #ff5254;
+}
