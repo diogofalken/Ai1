@@ -1,4 +1,9 @@
 body {
+  margin: 0;
+  padding: 0;
+  background: url(../images/ethan_marcotte.jpg);
+  background-size: 33%;
+  background-repeat: no-repeat;
   background-color: #c6c6c6;
 }
 
@@ -15,9 +20,4 @@ h1 {
 .container p {
   font-family: Verdana, Arial;
   font-size: 1.5em;
-}
-
-#first_image {
-  width: 33.3%;
-  height: 626px;
 }
