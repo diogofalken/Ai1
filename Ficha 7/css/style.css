@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: lightgrey;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+  background: white;
+}
+
+header {
+  border-bottom: 2px solid #2d6975;
+}
+
+#logo {
+  position: relative;
+  top: 20px;
+}
+
+nav {
+  position: relative;
+  top: 21px;
+}
+
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+  padding: 12px;
+  background: #2d6975;
+}
+
+#middle-nav {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+nav li a {
+  display: inline;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+/* Section About */
+section {
+  padding-top: 20px;
+}
+
+section #about {
+  float: left;
+}
+
+section #avatar {
+  float: right;
+}
