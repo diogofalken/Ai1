@@ -54,8 +54,12 @@ nav li a {
   text-align: center;
 }
 /* Section About */
-section {
-  padding-top: 20px;
+main section {
+  padding: 20px 0px;
+}
+
+main section:not(:first-of-type) {
+  border-top: 2px solid #2d6975;
 }
 
 section #about {
