@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <div class="container">
+    <div class="container nav-color">
       <div id="logo">
         <h1>Diogo Marques</h1>
         <h4>homepage</h4>
@@ -38,14 +38,10 @@
     <section>
       <div id="about">
         <h2>Quem sou</h2>
-        <h4>Nome:</h4>
-        <p>Diogo Marques</p>
-        <h4>Idade:</h4>
-        <p>19 anos</p>
-        <h4>Atividade:</h4>
-        <p>Estudante</p>
-        <h4>Onde vivo:</h4>
-        <p>Viseu</p>
+        <p class="quem_sou"><span>Nome:</span> Diogo Marques</p>
+        <p class="quem_sou"><span>Idade:</span> 19 anos</p>
+        <p class="quem_sou"><span>Atividade:</span> Estudante</p>
+        <p class="quem_sou"><span>Onde vivo:</span> Viseu</p>
       </div>
       <img src="images/avatar.jpg" id="avatar">
       <div class="clearfix"></div>
@@ -57,16 +53,19 @@
           <legend>A sua mensagem</legend>
           <label for="Nome">Nome:</label>
           <input type="text">
+          <div class="clearfix"></div>
           <label for="Email">Email:</label>
           <input type="email">
           <label for="Mensagem">Mensagem:</label>
           <textarea name="mensagem" cols="30" rows="10"></textarea>
+          <div class="clearfix"></div>
+          <button type="submit" id="button">Submit</button>
         </fieldset>
       </form>
     </section>
     <section>
       <h2>Os meus links favoritos</h2>
-      <ul>
+      <ul id="MyLinks">
         <li>A Bola</li>
         <li>Record</li>
         <li>O Jogo</li>
@@ -75,11 +74,13 @@
   </main>
 
   <footer>
-    <ul>
-      <li><a href="#">Quem sou</a></li>
-      <li><a href="#">Contacte-me</a></li>
-      <li><a href="#">Links</a></li>
-    </ul>
+    <div class="container bg-grey">
+      <ul>
+        <li><a href="#">Quem sou</a></li>
+        <li><a href="#">Contacte-me</a></li>
+        <li><a href="#">Links</a></li>
+      </ul>
+    </div>
   </footer>
 </body>
 

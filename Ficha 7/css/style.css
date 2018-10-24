@@ -5,6 +5,8 @@
 
 body {
   background: lightgrey;
+  line-height: 2em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .clearfix {
@@ -15,10 +17,16 @@ body {
   width: 75%;
   margin: 0 auto;
   background: white;
+  padding: 10px;
+}
+
+.nav-color {
+  background: #4ffce3;
 }
 
 header {
   border-bottom: 2px solid #2d6975;
+  background: #50bbcf;
 }
 
 #logo {
@@ -28,7 +36,8 @@ header {
 
 nav {
   position: relative;
-  top: 21px;
+  top: 30px;
+  left: 10px;
 }
 
 nav ul {
@@ -38,7 +47,7 @@ nav ul {
 
 nav ul li {
   float: left;
-  padding: 12px;
+  padding: 5px 10px;
   background: #2d6975;
 }
 
@@ -55,11 +64,14 @@ nav li a {
 }
 /* Section About */
 main section {
-  padding: 20px 0px;
+  padding: 20px;
 }
 
 main section:not(:first-of-type) {
-  border-top: 2px solid #2d6975;
+  border-top: 4px solid #2d6975;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 5px;
 }
 
 section #about {
@@ -68,4 +80,66 @@ section #about {
 
 section #avatar {
   float: right;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.quem_sou {
+  line-height: 2em;
+}
+/* Contacte-me */
+label {
+  float: left;
+}
+
+input,
+textarea {
+  float: right;
+  width: 85%;
+  margin: 5px;
+}
+
+#button {
+  float: right;
+  background: #50bbcf;
+  color: black;
+  padding: 10px;
+  margin: 5px;
+}
+
+#MyLinks {
+  margin-left: 40px;
+}
+
+/* Footer */
+footer {
+  background: #919191;
+}
+
+.bg-grey {
+  background: #919191;
+}
+
+footer ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+footer ul li {
+  float: left;
+  padding: 5px 10px;
+}
+
+footer ul li a {
+  display: inline;
+  color: white;
+  text-align: center;
+}
+
+footer ul li:first-of-type {
+  border-right: 1px solid white;
+}
+
+footer ul li:last-of-type {
+  border-left: 1px solid white;
 }
