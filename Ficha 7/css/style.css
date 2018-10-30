@@ -38,11 +38,13 @@ nav {
   position: relative;
   top: 30px;
   left: 10px;
+  width: 350px;
 }
 
 nav ul {
   list-style-type: none;
   overflow: hidden;
+  border-radius: 25px;
 }
 
 nav ul li {
@@ -62,6 +64,21 @@ nav li a {
   color: white;
   text-align: center;
 }
+
+nav li:first-of-type {
+  border-right: 1px solid white;
+}
+
+nav li.active {
+  background-color: #555;
+  color: white;
+}
+
+nav li:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
 /* Section About */
 main section {
   padding: 20px;
@@ -90,6 +107,10 @@ section #avatar {
 /* Contacte-me */
 label {
   float: left;
+}
+
+fieldset {
+  padding-left: 20px;
 }
 
 input,
@@ -142,4 +163,13 @@ footer ul li:first-of-type {
 
 footer ul li:last-of-type {
   border-left: 1px solid white;
+}
+
+/* Subpages */
+.container-subpage {
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: white;
+  min-height: calc(100vh - 128px);
 }
