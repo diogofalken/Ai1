@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/* EXERCICIO 1 */
+button {
+  padding: 15px;
+  opacity: 0.05;
+  transition: opacity 0.6s ease-in-out;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+/* EXERCICIO 2 */
+#main {
+  border: 2px solid red;
+}
+
+#bola_vermelha {
+  width: 100px;
+  height: 100px;
+  left: 45%;
+  top: 40px;
+  border-radius: 50px;
+  background-color: #ff0000;
+  position: relative;
+}
+
+#bola_azul1,
+#bola_azul2,
+#bola_azul3,
+#bola_azul4 {
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: blue;
+  position: relative;
+  left: 49.5%;
+}
+
+#bola_azul1 {
+  top: -20px;
+  transition: top 1s linear 0.2s;
+}
+
+#bola_azul2 {
+  top: -45px;
+  transition: left 1s linear 0.4s;
+}
+
+#bola_azul3 {
+  top: -70px;
+  transition: top 1s linear 0.6s;
+}
+
+#bola_azul4 {
+  top: -95px;
+  transition: left 1s linear 0.8s;
+}
+
+#bola_vermelha:hover ~ #bola_azul1 {
+  background: yellow;
+  top: -87px;
+}
+
+#bola_vermelha:hover ~ #bola_azul2 {
+  background: green;
+  left: 57%;
+}
+
+#bola_vermelha:hover ~ #bola_azul3 {
+  background: black;
+  top: -8px;
+}
+
+#bola_vermelha:hover ~ #bola_azul4 {
+  background: blueviolet;
+  left: 42%;
+}
