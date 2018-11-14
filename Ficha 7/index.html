@@ -1,90 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Diogo Marques</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Diogo Marques</title>
-</head>
+  <body>
+    <header>
+      <div class="container nav-color">
+        <div id="logo">
+          <h1>Diogo Marques</h1>
+          <h4>homepage</h4>
+        </div>
 
-<body>
-  <header>
-    <div class="container nav-color">
-      <div id="logo">
-        <h1>Diogo Marques</h1>
-        <h4>homepage</h4>
+        <nav>
+          <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">Quem sou</a></li>
+            <li id="middle-nav"><a href="contact.html">Contacte-me</a></li>
+            <li><a href="links.html">Links</a></li>
+          </ul>
+        </nav>
       </div>
+    </header>
 
-      <nav>
-        <ul>
-          <li class="active">
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="about.html">Quem sou</a>
-          </li>
-          <li id="middle-nav">
-            <a href="contact.html">Contacte-me</a>
-          </li>
-          <li>
-            <a href="links.html">Links</a>
-          </li>
+    <main class="container">
+      <section>
+        <div id="about">
+          <h2>Quem sou</h2>
+          <p class="quem_sou"><span>Nome:</span> Diogo Marques</p>
+          <p class="quem_sou"><span>Idade:</span> 19 anos</p>
+          <p class="quem_sou"><span>Atividade:</span> Estudante</p>
+          <p class="quem_sou"><span>Onde vivo:</span> Viseu</p>
+        </div>
+        <img src="images/avatar.jpg" id="avatar" />
+        <div class="clearfix"></div>
+      </section>
+      <section>
+        <h2>Contacte-me</h2>
+        <form action="#">
+          <fieldset>
+            <legend>A sua mensagem</legend>
+            <label for="Nome">Nome:</label> <input type="text" />
+            <div class="clearfix"></div>
+            <label for="Email">Email:</label> <input type="email" />
+            <label for="Mensagem">Mensagem:</label>
+            <textarea name="mensagem" cols="30" rows="10"></textarea>
+            <div class="clearfix"></div>
+            <button type="submit" id="button">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+      <section>
+        <h2>Os meus links favoritos</h2>
+        <ul id="MyLinks">
+          <li>A Bola</li>
+          <li>Record</li>
+          <li>O Jogo</li>
         </ul>
-      </nav>
+      </section>
+    </main>
 
-    </div>
-  </header>
-
-  <main class="container">
-    <section>
-      <div id="about">
-        <h2>Quem sou</h2>
-        <p class="quem_sou"><span>Nome:</span> Diogo Marques</p>
-        <p class="quem_sou"><span>Idade:</span> 19 anos</p>
-        <p class="quem_sou"><span>Atividade:</span> Estudante</p>
-        <p class="quem_sou"><span>Onde vivo:</span> Viseu</p>
+    <footer>
+      <div class="container bg-grey">
+        <ul>
+          <li><a href="#">Quem sou</a></li>
+          <li><a href="#">Contacte-me</a></li>
+          <li><a href="#">Links</a></li>
+        </ul>
       </div>
-      <img src="images/avatar.jpg" id="avatar">
-      <div class="clearfix"></div>
-    </section>
-    <section>
-      <h2>Contacte-me</h2>
-      <form action="#">
-        <fieldset>
-          <legend>A sua mensagem</legend>
-          <label for="Nome">Nome:</label>
-          <input type="text">
-          <div class="clearfix"></div>
-          <label for="Email">Email:</label>
-          <input type="email">
-          <label for="Mensagem">Mensagem:</label>
-          <textarea name="mensagem" cols="30" rows="10"></textarea>
-          <div class="clearfix"></div>
-          <button type="submit" id="button">Submit</button>
-        </fieldset>
-      </form>
-    </section>
-    <section>
-      <h2>Os meus links favoritos</h2>
-      <ul id="MyLinks">
-        <li>A Bola</li>
-        <li>Record</li>
-        <li>O Jogo</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container bg-grey">
-      <ul>
-        <li><a href="#">Quem sou</a></li>
-        <li><a href="#">Contacte-me</a></li>
-        <li><a href="#">Links</a></li>
-      </ul>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
