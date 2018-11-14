@@ -16,13 +16,13 @@ button:hover {
 
 /* EXERCICIO 2 */
 #main {
-  border: 2px solid red;
+  background: lightgray;
 }
 
 #bola_vermelha {
   width: 100px;
   height: 100px;
-  left: 45%;
+  margin: 0 auto;
   top: 40px;
   border-radius: 50px;
   background-color: #ff0000;
@@ -38,7 +38,8 @@ button:hover {
   border-radius: 50px;
   background-color: blue;
   position: relative;
-  left: 49.5%;
+  margin: 0 auto;
+  left: 0;
 }
 
 #bola_azul1 {
@@ -62,21 +63,108 @@ button:hover {
 }
 
 #bola_vermelha:hover ~ #bola_azul1 {
-  background: yellow;
   top: -87px;
 }
 
 #bola_vermelha:hover ~ #bola_azul2 {
-  background: green;
-  left: 57%;
+  left: 65px;
 }
 
 #bola_vermelha:hover ~ #bola_azul3 {
-  background: black;
   top: -8px;
 }
 
 #bola_vermelha:hover ~ #bola_azul4 {
-  background: blueviolet;
-  left: 42%;
+  left: -65px;
+}
+
+/* EXERCICIO 3 */
+
+.pacman {
+  width: 100%;
+}
+
+#pacman-top {
+  background-color: yellow;
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 100px 100px 0 0;
+  animation: rotate-top 0.8s infinite linear;
+}
+
+#pacman-bottom {
+  background-color: yellow;
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 0 0 100px 100px;
+  animation: rotate-bottom 0.8s infinite linear;
+}
+
+@keyframes rotate-top {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes rotate-bottom {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+/* EXERCICIO 4 */
+#relogio_principal {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 10px solid grey;
+  margin: 0 auto;
+}
+
+#circulo_secundario {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  border: 5px solid grey;
+  margin: 0 auto;
+  position: relative;
+  top: 7px;
+}
+
+#circulo_central {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #ff0000;
+  position: relative;
+  bottom: 120px;
+  margin: 0 auto;
+}
+
+#ponteiro {
+  height: 85px;
+  width: 5px;
+  background: #ff0000;
+  margin: 0 auto;
+  bottom: 212px;
+  position: relative;
+  animation: relogio 60s 2 linear;
+  transform-origin: bottom;
+}
+
+@keyframes relogio {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
