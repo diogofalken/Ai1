@@ -103,19 +103,19 @@ button:hover {
 }
 
 @keyframes rotate-top {
-  from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  50% {
     transform: rotate(-45deg);
   }
 }
 
 @keyframes rotate-bottom {
-  from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  50% {
     transform: rotate(45deg);
   }
 }
