@@ -8,25 +8,25 @@ var aux = 0; /* 0 -> Domingo
               */
 
 function showdays1() {
-  if (aux === 0) {
+  if (aux == 0) {
     alert("Domingo");
     aux++;
-  } else if (aux === 1) {
+  } else if (aux == 1) {
     alert("Segunda");
     aux++;
-  } else if (aux === 2) {
+  } else if (aux == 2) {
     alert("Terça");
     aux++;
-  } else if (aux === 3) {
+  } else if (aux == 3) {
     alert("Quarta");
     aux++;
-  } else if (aux === 4) {
+  } else if (aux == 4) {
     alert("Quinta");
     aux++;
-  } else if (aux === 5) {
+  } else if (aux == 5) {
     alert("Sexta");
     aux++;
-  } else if (aux === 6) {
+  } else if (aux == 6) {
     alert("Sabado");
     aux = 0;
   }
@@ -44,7 +44,7 @@ var dia_da_semana = [
 ];
 
 function showdays2() {
-  if (dia_index === 7) {
+  if (dia_index == 7) {
     dia_index = 0;
   }
   alert(dia_da_semana[dia_index++]);
