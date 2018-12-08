@@ -1,0 +1,51 @@
+* {
+  transition: all 0.2s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+#Title {
+  text-align: center;
+}
+
+#resposta_certa {
+  text-align: center;
+  display: none;
+  color: green;
+}
+
+#pergunta {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 20px;
+}
+
+#quiz .respostas {
+  border: 1px solid black;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#quiz .respostas:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+button {
+  padding: 20px;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  position: absolute;
+  bottom: 50%;
+  left: 45%;
+  display: none;
+}
