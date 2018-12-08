@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url(../images/programming.jpg);
+  min-height: 100vh;
+  background-size: cover;
+}
+nav {
+  background-color: #333;
+}
+nav #logo {
+  text-align: center;
+  padding: 10px;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+}
