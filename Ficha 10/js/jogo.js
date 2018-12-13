@@ -25,9 +25,7 @@ respostas.forEach(resposta => {
       perguntas[i]();
     } else {
       pontuacao -= 2;
-      if (pontuacao < 0) {
-        pontuacao = 0;
-      }
+
       switch (document.getElementById("pergunta").innerHTML) {
         case "O que significa HTML?":
           final_pergunta("question3");
@@ -96,6 +94,9 @@ function pergunta5() {
 function acabouJogo() {
   limparCores();
   document.getElementById("quiz").style.display = "none";
+  if (pontuacao < 0) {
+    pontuacao = 0;
+  }
   document.getElementById("pergunta").innerHTML =
     "Acabou o teste com " + pontuacao + " pontos.";
   document.getElementById("resposta_certa").style.display = "none";
